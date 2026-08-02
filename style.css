@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #6a00ff, #00d4ff);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #6a00ff;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+.hero {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h2 {
+    font-size: 26px;
+    color: #6a00ff;
+}
+
+.hero p {
+    margin: 15px 0;
+    color: #444;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.services,
+.contact {
+    text-align: center;
+}
+.vpn-container {
+    text-align: center;
+}
+
+.vpn-card {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #6a00ff;
+}
+
+.vpn-card h3 {
+    color: #6a00ff;
+    margin-bottom: 10px;
+}
+
+.vpn-card p {
+    margin: 8px 0;
+}
+
+.vpn-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.category-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.category-menu a {
+    display: block;
+    padding: 15px;
+    background: linear-gradient(135deg, #6a00ff, #00d4ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+}
+
+.category-menu a:hover {
+    transform: scale(1.03);
+}
+.whatsapp-group {
+    text-align: center;
+    margin: 25px 0;
+    padding: 25px;
+    background: linear-gradient(135deg, #00d4ff, #6a00ff);
+    color: white;
+    border-radius: 25px;
+}
+
+.whatsapp-group h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.whatsapp-group p {
+    margin: 15px 0;
+}
+
+.whatsapp-group a {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Désiré Digital Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>👑 DÉSIRÉ DIGITAL SERVICE 👑</h1>
+        <p>Services numériques & solutions VPN premium</p>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <h2>Bienvenue chez Désiré Digital Service</h2>
+
+            <p>
+                Découvrez nos fichiers VPN, formations et services digitaux premium.
+            </p>
+
+            <a href="https://wa.me/22669385149" class="btn">
+                📲 Commander sur WhatsApp
+            </a>
+        </section>
+
+
+        <section class="services">
+
+    <h2>Nos services</h2>
+
+    <p>
+        🔐 Fichiers VPN<br>
+        🎓 Formations VPN<br>
+        🤝 Comptes Revendeur<br>
+        🌐 Services Digitaux
+    </p>
+
+
+    <div class="category-menu">
+
+        <a href="services/vpn/vpn.html">
+            📂 Fichiers VPN
+        </a>
+
+        <a href="services/formations/formations.html">
+            🎓 Formations
+        </a>
+
+        <a href="services/revendeur/revendeur.html">
+            🤝 Comptes Revendeur
+        </a>
+
+        <a href="services/digital/digital.html">
+            🌐 Services Digitaux
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        WhatsApp : +226 69385149
+    </p>
+
+</section>
+<div id="whatsapp-container"></div>
+
+<script>
+fetch("assets/groupe.html")
+.then(response => response.text())
+.then(data => {
+    document.getElementById("whatsapp-container").innerHTML = data;
+});
+</script>

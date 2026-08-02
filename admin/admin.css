@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #222;
+}
+
+.admin-login,
+.dashboard {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.admin-login h1,
+.dashboard h1 {
+    color: #6a00ff;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #6a00ff, #00d4ff);
+    color: white;
+    font-weight: bold;
+}
+
+.admin-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 20px;
+}
+
+.admin-card h3 {
+    color: #6a00ff;
+    margin-bottom: 10px;
+}
+
+.admin-card button {
+    margin-top: 15px;
+}
