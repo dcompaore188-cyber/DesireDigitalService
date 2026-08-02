@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Désiré Digital Service</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>👑 DÉSIRÉ DIGITAL SERVICE 👑</h1>
-        <p>Services numériques & solutions VPN premium</p>
-    </header>
+<header>
+
+    <h1>👑 DÉSIRÉ DIGITAL SERVICE 👑</h1>
+
+    <p>Services numériques & solutions VPN Premium</p>
+
+</header>
 
 
-    <main>
+<main>
 
-        <section class="hero">
-            <h2>Bienvenue chez Désiré Digital Service</h2>
+    <section class="hero">
 
-            <p>
-                Découvrez nos fichiers VPN, formations et services digitaux premium.
-            </p>
+        <h2>Bienvenue chez Désiré Digital Service</h2>
 
-            <a href="https://wa.me/22669385149" class="btn">
-                📲 Commander sur WhatsApp
-            </a>
-        </section>
+        <p>
+            Découvrez nos fichiers VPN Premium, nos formations,
+            nos comptes revendeur et nos services digitaux.
+        </p>
 
-
-        <section class="services">
-
-    <h2>Nos services</h2>
-
-    <p>
-        🔐 Fichiers VPN<br>
-        🎓 Formations VPN<br>
-        🤝 Comptes Revendeur<br>
-        🌐 Services Digitaux
-    </p>
-
-
-    <div class="category-menu">
-
-        <a href="services/vpn/vpn.html">
-            📂 Fichiers VPN
+        <a href="https://wa.me/22669385149" class="btn-whatsapp">
+            📲 Commander sur WhatsApp
         </a>
 
-        <a href="services/formations/formations.html">
-            🎓 Formations
-        </a>
+    </section>
 
-        <a href="services/revendeur/revendeur.html">
-            🤝 Comptes Revendeur
-        </a>
 
-        <a href="services/digital/digital.html">
+    <section class="services">
+
+        <h2>Nos Services</h2>
+
+        <p>
+            🔐 Fichiers VPN<br>
+            🎓 Formations VPN<br>
+            🤝 Comptes Revendeur<br>
             🌐 Services Digitaux
-        </a>
-
-    </div>
-
-</section>
+        </p>
 
 
-<section class="contact">
+        <div class="category-menu">
 
-    <h2>Contact</h2>
+            <a href="services/vpn-pro/index.html">
+                📂 Fichiers VPN
+            </a>
 
-    <p>
-        WhatsApp : +226 69385149
-    </p>
+            <a href="services/formations-pro/index.html">
+                🎓 Formations VPN
+            </a>
 
-</section>
+            <a href="services/revendeur-pro/index.html">
+                🤝 Comptes Revendeur
+            </a>
+
+            <a href="services/digital-pro/index.html">
+                🌐 Services Digitaux
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact">
+
+        <h2>📞 Contact</h2>
+
+        <p>
+            WhatsApp : +226 69 38 51 49
+        </p>
+
+    </section>
+
+</main>
+
+
 <div id="whatsapp-container"></div>
+
+<script src="script.js"></script>
 
 <script>
 fetch("assets/groupe.html")
@@ -85,3 +100,7 @@ fetch("assets/groupe.html")
     document.getElementById("whatsapp-container").innerHTML = data;
 });
 </script>
+
+</body>
+
+</html>
