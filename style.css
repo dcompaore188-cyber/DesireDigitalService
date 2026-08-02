@@ -166,3 +166,56 @@ footer {
     border-radius: 30px;
     font-weight: bold;
 }
+.category-page{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:12px 20px;
+    background:#6a00ff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#4d00c9;
+}
+
+.vpn-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.vpn-card:hover{
+    transform:translateY(-5px);
+}
+
+.vpn-card h3{
+    color:#6a00ff;
+    margin-bottom:10px;
+}
+
+.vpn-card p{
+    margin:8px 0;
+}
+
+.vpn-card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 22px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+}
