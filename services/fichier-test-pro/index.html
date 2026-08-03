@@ -12,7 +12,9 @@
 
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -23,7 +25,9 @@
 </header>
 
 
+
 <main class="category-page">
+
 
 <a href="../../index.html" class="back-btn">
 ⬅ Retour à l'accueil
@@ -33,28 +37,30 @@
 <h2>📄 Commander un Fichier Test</h2>
 
 
-<div class="digital-card">
+
+<div class="vpn-card">
+
 
 <h3>🚀 Fichier Test VPN</h3>
 
+
 <p>
-Commandez un fichier test VPN de votre choix auprès de notre administrateur.
+Commandez un fichier test VPN de votre choix auprès de l'administrateur.
 </p>
+
 
 <p>
 📲 Administrateur : +226 69385149
 </p>
+
 
 <p>
 ⚡ Service rapide et personnalisé
 </p>
 
 
-<a href="https://wa.me/22669385149?text=Bonjour%20D%C3%A9sir%C3%A9%20Digital%20Service,%20je%20voudrais%20commander%20un%20fichier%20test%20VPN%20de%20mon%20choix."
-class="order-btn">
-
+<a href="#" onclick="commander('Fichier Test VPN'); return false;">
 🛒 Commander
-
 </a>
 
 
@@ -62,6 +68,24 @@ class="order-btn">
 
 
 </main>
+
+
+
+<script src="../../assets/config.js"></script>
+
+<script>
+
+if (servicesConfig.test.status === "Indisponible") {
+
+    document.querySelector(".category-page").innerHTML +=
+    "<p style='color:red;text-align:center;'>❌ Service temporairement indisponible</p>";
+
+}
+
+</script>
+
+
+<script src="../../script.js"></script>
 
 
 </body>

@@ -1,42 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Désiré Digital Service</title>
+
+<title>Formations VPN | Désiré Digital Service</title>
+
 <link rel="stylesheet" href="../../style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
+
 <h1>👑 DÉSIRÉ DIGITAL SERVICE 👑</h1>
-<p>Services Premium</p>
+
+<p>🎓 Formations VPN Premium</p>
+
 </header>
+
+
 
 <main class="category-page">
 
-<a href="../../index.html" class="back-btn">⬅ Retour à l'accueil</a>
 
-<h2>🎓 Formations VPN</h2>
+<a href="../../index.html" class="back-btn">
+⬅ Retour à l'accueil
+</a>
 
-<div class="formation-card">
+
+<h2>🎓 Formations</h2>
+
+
+
+<div class="vpn-card">
+
 <h3>🌐 Formation Proxy</h3>
-<p>Apprenez les configurations Proxy.</p>
-<p>💰 3000 FCFA</p>
-<a href="#" onclick="commander('Formation Proxy'); return false;">📚 Commander</a>
+
+<p>Apprentissage des configurations Proxy</p>
+
+<p>💰 Prix : 3000 FCFA</p>
+
+<a href="#" onclick="commander('Formation Proxy'); return false;">
+🛒 Commander
+</a>
+
 </div>
 
-<div class="formation-card">
-<h3>🔐 Formation VPN</h3>
-<p>Dark Tunnel, HTTP Custom, NetMod, NPV Tunnel et autres.</p>
-<p>💰 3000 FCFA</p>
-<a href="#" onclick="commander('Formation VPN'); return false;">📚 Commander</a>
+
+
+<div class="vpn-card">
+
+<h3>🔐 Formation différents VPN</h3>
+
+<p>Formation sur plusieurs solutions VPN</p>
+
+<p>💰 Prix : 3000 FCFA</p>
+
+<a href="#" onclick="commander('Formation différents VPN'); return false;">
+🛒 Commander
+</a>
+
 </div>
 
-<div class="formation-card">
+
+
+<div class="vpn-card">
+
 <h3>🖥️ Formation VPN + Host</h3>
-<p>Création de Host et configurations VPN.</p>
-<p>💰 3000 FCFA</p>
-<a href="#" onclick="commander('Formation VPN + Host'); return false;">📚 Commander</a>
+
+<p>Formation avec configuration Host</p>
+
+<p>💰 Prix : 3000 FCFA</p>
+
+<a href="#" onclick="commander('Formation VPN + Host'); return false;">
+🛒 Commander
+</a>
+
 </div>
+
+
+
+</main>
+
+
+
+<script src="../../assets/config.js"></script>
+
+<script>
+
+if (servicesConfig.formation.status === "Indisponible") {
+
+    document.querySelector(".category-page").innerHTML +=
+    "<p style='color:red;text-align:center;'>❌ Service temporairement indisponible</p>";
+
+}
+
+</script>
+
+
+<script src="../../script.js"></script>
+
+
+</body>
+
+</html>

@@ -2,76 +2,129 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dashboard Admin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="admin.css">
+<title>Dashboard Admin | Désiré Digital Service</title>
+
+<link rel="stylesheet" href="admin.css">
+
 </head>
 
 
 <body>
 
-    <div class="dashboard">
+<div class="admin-box">
 
-        <h1>👑 Désiré Digital Service</h1>
+<h1>👑 Dashboard Admin</h1>
 
-        <h2>⚙️ Tableau de bord Administrateur</h2>
-
-
-        <div class="admin-card">
-            <h3>💰 Gestion des prix</h3>
-            <p>Modifier les prix des services</p>
-            <button>Modifier</button>
-        </div>
-
-
-        <div class="admin-card">
-            <h3>📂 Gestion des fichiers VPN</h3>
-            <p>Ajouter ou modifier les fichiers disponibles</p>
-            <button>Gérer</button>
-        </div>
-
-
-        <div class="admin-card">
-            <h3>🟢 Disponibilité des services</h3>
-            <p>Activer ou désactiver un service</p>
-            <button>Modifier</button>
-        </div>
-
-
-        <div class="admin-card">
-    <h3>🟢 Disponibilité des services</h3>
-    <p>Activer ou désactiver un service</p>
-
-    <a href="disponibilite.html">
-        <button>Modifier</button>
-    </a>
-</div>
-
-
-<div class="admin-card">
-    <h3>📢 Annonces</h3>
-    <p>Publier des informations</p>
-    <button>Gérer</button>
-</div>
+<p>Gestion des services</p>
 
 
 <div class="admin-card">
 
-    <h3>💰 Gestion des prix</h3>
+<h3>📂 Fichiers VPN</h3>
 
-    <p>Modifier les prix des services</p>
+<p id="vpn-status">Statut : Disponible</p>
 
-    <a href="prix.html">
-        <button>Modifier</button>
-    </a>
+<input type="text" id="vpn-price" value="500 FCFA / semaine">
+
+<button onclick="toggleService('vpn-status')">
+Modifier statut
+</button>
+
+<button onclick="savePrice('vpn-price')">
+💾 Enregistrer prix
+</button>
+
+</div>
+
+
+
+<div class="admin-card">
+
+<h3>🎓 Formations VPN</h3>
+
+<p id="formation-status">Statut : Disponible</p>
+
+<input type="text" id="formation-price" value="3000 FCFA">
+
+<button onclick="toggleService('formation-status')">
+Modifier statut
+</button>
+
+<button onclick="savePrice('formation-price')">
+💾 Enregistrer prix
+</button>
+
+</div>
+
+
+
+<div class="admin-card">
+
+<h3>🤝 Comptes Revendeur</h3>
+
+<p id="revendeur-status">Statut : Disponible</p>
+
+<input type="text" id="revendeur-price" value="1500 FCFA">
+
+<button onclick="toggleService('revendeur-status')">
+Modifier statut
+</button>
+
+<button onclick="savePrice('revendeur-price')">
+💾 Enregistrer prix
+</button>
+
+</div>
+
+
+
+<div class="admin-card">
+
+<h3>🌐 Services Digitaux</h3>
+
+<p id="digital-status">Statut : Disponible</p>
+
+<input type="text" id="digital-price" value="1000 FCFA">
+
+<button onclick="toggleService('digital-status')">
+Modifier statut
+</button>
+
+<button onclick="savePrice('digital-price')">
+💾 Enregistrer prix
+</button>
+
+</div>
+
+
+
+<div class="admin-card">
+
+<h3>📄 Fichier Test VPN</h3>
+
+<p id="test-status">Statut : Disponible</p>
+
+<input type="text" id="test-price" value="Sur demande">
+
+<button onclick="toggleService('test-status')">
+Modifier statut
+</button>
+
+<button onclick="savePrice('test-price')">
+💾 Enregistrer prix
+</button>
 
 </div>
 
 
 </div>
+
+
+<script src="admin.js"></script>
 
 </body>
 

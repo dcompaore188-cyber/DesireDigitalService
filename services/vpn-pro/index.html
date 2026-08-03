@@ -1,56 +1,119 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Désiré Digital Service</title>
+
+<title>Fichiers VPN | Désiré Digital Service</title>
+
 <link rel="stylesheet" href="../../style.css">
+
 </head>
+
 
 <body>
 
+
 <header>
+
 <h1>👑 DÉSIRÉ DIGITAL SERVICE 👑</h1>
-<p>Services Premium</p>
+
+<p>Configurations VPN Premium</p>
+
 </header>
+
+
 
 <main class="category-page">
 
-<a href="../../index.html" class="back-btn">⬅ Retour à l'accueil</a>
+
+<a href="../../index.html" class="back-btn">
+⬅ Retour à l'accueil
+</a>
+
 
 <h2>📂 Fichiers VPN</h2>
 
+
+
 <div class="vpn-card">
+
 <h3>🔥 Dark Tunnel</h3>
-<p>Configuration Premium</p>
+
+<p>Configuration VPN Premium</p>
+
 <p>💰 500 FCFA / semaine</p>
+
 <p>👑 1000 FCFA / mois</p>
-<a href="#" onclick="commander('Dark Tunnel')">🛒 Commander</a>
+
+<a href="#" onclick="commander('Dark Tunnel'); return false;">
+🛒 Commander
+</a>
+
 </div>
 
+
+
+
 <div class="vpn-card">
+
 <h3>⚡ HTTP Custom</h3>
-<p>Configuration Premium</p>
+
+<p>Configuration VPN Premium</p>
+
 <p>💰 500 FCFA / semaine</p>
+
 <p>👑 1000 FCFA / mois</p>
-<a href="#" onclick="commander('HTTP Custom')">🛒 Commander</a>
+
+<a href="#" onclick="commander('HTTP Custom'); return false;">
+🛒 Commander
+</a>
+
 </div>
 
+
+
+
 <div class="vpn-card">
+
 <h3>🚀 NPV Tunnel</h3>
-<p>Configuration Premium</p>
+
+<p>Configuration VPN Premium</p>
+
 <p>💰 500 FCFA / semaine</p>
+
 <p>👑 1000 FCFA / mois</p>
-<a href="#" onclick="commander('NPV Tunnel')">🛒 Commander</a>
+
+<a href="#" onclick="commander('NPV Tunnel'); return false;">
+🛒 Commander
+</a>
+
 </div>
 
+
+
+
 <div class="vpn-card">
+
 <h3>🛡️ NetMod</h3>
-<p>Configuration Premium</p>
+
+<p>Configuration VPN Premium</p>
+
 <p>💰 500 FCFA / semaine</p>
+
 <p>👑 1000 FCFA / mois</p>
-<a href="#" onclick="commander('NetMod')">🛒 Commander</a>
+
+<a href="#" onclick="commander('NetMod'); return false;">
+🛒 Commander
+</a>
+
 </div>
+
+
+
+
 <div class="vpn-card">
 
 <h3>⚡ SSC Custom</h3>
@@ -66,6 +129,8 @@
 </a>
 
 </div>
+
+
 
 
 <div class="vpn-card">
@@ -83,21 +148,8 @@
 </a>
 
 </div>
-<div class="vpn-card">
 
-<h3>⚡ SSC Custom</h3>
 
-<p>Configuration VPN Premium</p>
-
-<p>💰 500 FCFA / semaine</p>
-
-<p>👑 1000 FCFA / mois</p>
-
-<a href="#" onclick="commander('SSC Custom'); return false;">
-🛒 Commander
-</a>
-
-</div>
 
 
 <div class="vpn-card">
@@ -115,3 +167,30 @@
 </a>
 
 </div>
+
+
+
+</main>
+
+
+
+<script src="../../assets/config.js"></script>
+
+<script>
+
+if (servicesConfig.vpn.status === "Indisponible") {
+
+    document.querySelector(".category-page").innerHTML +=
+    "<p style='color:red;text-align:center;'>❌ Service temporairement indisponible</p>";
+
+}
+
+</script>
+
+
+<script src="../../script.js"></script>
+
+
+</body>
+
+</html>
